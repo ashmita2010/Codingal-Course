@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <title>Bootstrap Jumbotron</title>
-        
-        <meta charset="utf-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-        
-        </script>
-        
-        </head>
-        <body style="text-align: center;">
-            <div class="jumbotron">
-                <div class="container">
-                    <h1 style="color:orange">CLASSROOM ACTIVITIES</h1>
-                    <p>Classroom activities are the one in which you have to complete or do the work during the class..</p>
-                </div>
-            </div>
-              <div class="container-fluid" style="background-color: aquamarine;">
-            <h2>Button</h2>
+<head>
+    <style>
+        div {
+            border: 3px solid green;
+            color:blueviolet;
+            border-radius: 10px;
+        }
+        div.sticky {
+            position: sticky;
+            top: 30px;
+            left: 30px;
+            width: 300px;
+            background-color: darkred;
+            border: 3px solid orange;
+        }
+        div.fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 300px;
+            background-color: lightblue;
+            border: 3px solid red;
+        }
 
-            <button type="button" class="btn btn-primary">Completed</button>
-            <button type="button" class="btn btn-secondary">Not Completed</button>
-            <button type="button" class="btn btn-success">In Progress</button>
-            <button type="button" class="btn btn-warning">On Hold</button>
-            <button type="button" class="btn btn-danger">Failed</button>
+        div.relative {
+            position: relative;
+            left: 100px;
+            border: 3px solid plum;
+            width: 300px;
+        }
+        div.absolute {
+            position: absolute;
+            left: 100px;
+            border: 3px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>POSITIONING</h2>
+    <div>Doraemon</div>
+    <div class="sticky">nobi</div>
+    <div class="relative">This div element....
+        <div class="absolute">absolute
             </div>
-        </body>
+        </div>
+        <div class="fixed">Div with fixed...</div>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
 </html>
