@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Class</h2>
+        <p>How to use a JavaScript Class.</p>
+        <p id="ash1"></p>
+        <p id="ash2"></p>
+        <script>
+            class mita {
+                constructor(name , year) {
+                    this.name = name;
+                    this.year = year;
+                }
+                // creating age method for class student
+                age() {
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+            }
+               // use student class with two objects
+               mitaObj1 = new mita("Riya" , 2014);
+               //new - create a new instance
+               document.getElementById("ash1").innerHTML = "My name is " + mitaObj1.name + ". I was born in " + mitaObj1.year + " . And my age is " +  mitaObj1.age();
+                mitaObj2 = new mita("Piya" , 2006);
+                 document.getElementById("ash2").innerHTML = "My name is " + mitaObj2.name + ". I was born in " + mitaObj2.year + " . And my age is " +  mitaObj2.age();
+
+        </script>
+    </body>
+</html>
