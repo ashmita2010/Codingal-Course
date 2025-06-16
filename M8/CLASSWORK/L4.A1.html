@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript String Methods</h2>
+        <p>Search a string for "doing" , display the position of the match and replace the word "how are " with "how are you" and display</p>
+        <p id = "search_result"></p>
+        <p id = "replace_result"></p>
+        <p id = "string_result"></p>
+        <p id = "Id1"></p>
+        <p id = "Id2"></p>
+        <script>
+            var str = "hello My name ash";
+            var search_position = str.search("ash"); //searches for the position (index) where the word "doing"  first appears in the string.
+            var txt = str.replace("My name" , "My name is");
+            document.getElementById("search_result").innerHTML = search_position;
+             document.getElementById("replace_result").innerHTML = txt;
+             var x = 76;
+             var y = 87;
+             var g = String(x) + String(y)
+              
+              document.getElementById("string_result").innerHTML = g ; // Does not add because it is a string it concatenates
+               document.getElementById("Id1").innerHTML = typeof g;
+               document.getElementById("Id2").innerHTML = Number(g);
+        </script>
+    </body>
+</html>
