@@ -1,0 +1,22 @@
+body {
+    background: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Main Container height */
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('robot.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
