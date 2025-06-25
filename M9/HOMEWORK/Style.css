@@ -1,0 +1,21 @@
+body {
+    background: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navigation-link {
+    border: 2px solid transparent;
+}
+.main-container {
+    height: 110vh;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('restaurant.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
