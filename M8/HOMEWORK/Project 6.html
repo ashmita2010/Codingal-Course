@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Name:</p>
+        <p>Age:</p>
+        <input id = "id1" type="number" min="18" max="80" required>
+        <input id = "id2" type="text" >
+        <p>The age should be 18 or greater than 18.</p>
+        <button onclick="myFunction()">OK</button>
+        <p id="result"></p>
+        <script>
+            function myFunction() {
+                var inpObj = document.getElementById("id1");
+                if (!inpObj.checkValidity()) {
+                    document.getElementById("result").innerHTML = inpObj.validationMessage;
+
+                } else {
+                      document.getElementById("result").innerHTML = "Input OK";
+                }
+                 function myFunction() 
+                var inpObj = document.getElementById("id2");
+                if (!inpObj.checkValidity()) {
+                    document.getElementById("result").innerHTML = inpObj.validationMessage;
+
+            }
+        </script>
+    </body>
+</html>
